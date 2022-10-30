@@ -11,6 +11,9 @@ body {
   color: #212121;
   line-height: 1.5;
   background-image: url(../images/photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 input {
@@ -62,10 +65,18 @@ ul {
   background-color: rgba(255, 255, 255, 0.374);
   border-radius: 5px;
 }
-.country-list__img-box,
-.card__img-box {
+.country-list__img-box {
   width: 120px;
   height: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card__img-box {
+  width: 220px;
+  height: 200px;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -84,6 +95,7 @@ ul {
 .card {
   background-color: rgba(255, 255, 255, 0.374);
   padding: 40px;
+  border-radius: 5px;
 }
 .card__name {
   margin-top: 50px;
