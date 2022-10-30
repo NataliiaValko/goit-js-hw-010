@@ -1,5 +1,10 @@
 import { refs } from './refs';
 
+export const clearResultMarkup = () => {
+  refs.itemResult.innerHTML = '';
+  refs.listResult.innerHTML = '';
+};
+
 export const createCountries = array => {
   const markup = array
     .map(country => {

@@ -3,16 +3,16 @@ import Notiflix from 'notiflix';
 
 import { fetchCountries } from './js/fetchCountries';
 import { refs } from './js/refs';
-import { createCountries, createCountry } from './js/renderMarkupCountry';
+import {
+  createCountries,
+  createCountry,
+  clearResultMarkup,
+} from './js/renderMarkupCountry';
 
 import './css/styles.css';
 
 const DEBOUNCE_DELAY = 300;
 
-const clearResultMarkup = () => {
-  refs.itemResult.innerHTML = '';
-  refs.listResult.innerHTML = '';
-};
 const handleInput = event => {
   clearResultMarkup();
   const searchQuery = event.target.value.trim().toLowerCase();
