@@ -62,7 +62,8 @@ ul {
   background-color: rgba(255, 255, 255, 0.374);
   border-radius: 5px;
 }
-.country-list__img-box {
+.country-list__img-box,
+.card__img-box {
   width: 120px;
   height: 100px;
   overflow: hidden;
@@ -71,7 +72,8 @@ ul {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.country-list__img {
+.country-list__img,
+.card__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -79,24 +81,24 @@ ul {
   object-position: center;
 }
 
-.country-list__name {
+.card {
+  background-color: rgba(255, 255, 255, 0.374);
+  padding: 40px;
+}
+.card__name {
   margin-top: 50px;
 }
-
-.country-list__name {
-  margin-top: 50px;
-}
-.country-list__capital {
+.card__capital {
   font-size: 18px;
   font-weight: 700;
   margin-top: 20px;
 }
-.country-list__population {
+.card__population {
   font-size: 18px;
   font-weight: 700;
   margin-top: 12px;
 }
-.country-list__languages {
+.card__languages {
   font-size: 18px;
   font-weight: 700;
   margin-top: 12px;

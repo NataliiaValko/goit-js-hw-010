@@ -21,14 +21,14 @@ export const createCountries = array => {
 export const createCountry = array => {
   const markup = array
     .map(country => {
-      return `<div aria-label="country card"><div class="country-list__img-box">          
-      <img class="country-list__img" src="${country.flags.svg}" alt="${
+      return `<div aria-label="country card" class="card"><div class="card__img-box">          
+      <img class="card__img" src="${country.flags.svg}" alt="${
         country.name
       }"></div>
-        <h2 class="country-list__name">${country.name.common}</h2>
-    <p class="country-list__capital">Capital: ${country.capital}</p>
-    <p class="country-list__population">Population: ${country.population}</p>
-    <p class="country-list__languages">Languages: ${Object.values(
+        <h2 class="card__name">${country.name.common}</h2>
+    <p class="card__capital">Capital: ${country.capital}</p>
+    <p class="card__population">Population: ${country.population}</p>
+    <p class="card__languages">Languages: ${Object.values(
       country.languages
     )}</p></div>`;
     })
