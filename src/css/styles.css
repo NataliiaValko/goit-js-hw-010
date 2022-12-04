@@ -49,6 +49,14 @@ ul {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-input {
+  display: block;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid rgb(107, 97, 72);
+}
+
 .country-list,
 .country-info {
   display: flex;

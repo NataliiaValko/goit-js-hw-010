@@ -19,7 +19,6 @@ const handleInput = event => {
 
   fetchCountries(searchQuery)
     .then(result => {
-      console.log(result);
       if (result.length > 10) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
@@ -31,7 +30,6 @@ const handleInput = event => {
       }
     })
     .catch(error => {
-      console.log(error);
       Notiflix.Notify.failure('Oops, there is no country with that name');
     });
 };
