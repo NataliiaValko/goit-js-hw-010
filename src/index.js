@@ -16,6 +16,9 @@ const DEBOUNCE_DELAY = 300;
 const handleInput = event => {
   clearResultMarkup();
   const searchQuery = event.target.value.trim().toLowerCase();
+  if (searchQuery === '') {
+    return;
+  }
 
   fetchCountries(searchQuery)
     .then(result => {
